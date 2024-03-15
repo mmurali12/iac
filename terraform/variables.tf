@@ -11,7 +11,7 @@ variable "vpc-name" {
 }
 
 variable "igw-name" {
-  description = "Internet Gate Way Name for our Jumphost server"
+  description = "InternetGate Way Name for our Jumphost server"
   type = string
   default = "Jumphost-igw"
 }
