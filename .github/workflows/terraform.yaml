@@ -15,9 +15,10 @@ env:
     # credentials for deployment to AWS
     AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
     AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_KEY_ID }}
+
     # S3 bucket for the terraform state. 
     BUCKET_TF_STATE: ${{ secrets.S3_BUCKET_MURALI}}
-    AWS_REGION: us-east-1
+    AWS_REGION: ap-south-1
 
 jobs:
     terraform:
