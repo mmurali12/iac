@@ -36,7 +36,7 @@ jobs:
 
         - name: Terraform Init
           id: init
-          run: terraform init -backend-config "bucket=$S3_BUCKET_MURALI"
+          run: terraform init -backend-config "bucket=${{ secrets.S3_BUCKET_MURALI }}"
 
         - name: Terraform Format
           id: fmt
